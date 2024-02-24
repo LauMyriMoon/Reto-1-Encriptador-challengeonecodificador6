@@ -3,28 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="encriptador.css">
     <title>Encriptador de texto</title>
 </head>
+
 <body>
+    <main class="main">
+        <section>
+            <h1><img src="imagenes/Logologoalura.png"></h1>
+        
+            <h2>Bienvenido al encriptador de texto</h2>
+            <p>Ingresa el texto que deseas encriptar tomando en cuenta los siguientes consejos: </p>
+        
 
-    <header>
-        <h1><img src="imagenes/Logologoalura.png"></h1>
-        <h2>Bienvenido al encriptador de texto</h2>
-    </header>
-
-    <main>
-        <p>Ingresa el texto que deseas encriptar, toma en cuenta los sigientes consejos: </p>
-
-        <section class="consejos"></section>
-            <ul class="lista-consejos">
-                <li class="items">Utiliza unicamente letras minusculas.</li>
-                <li class="items">No coloques acentos.</li>
-                <li class="items">No coloques caracteres especiales.</li>
+        <div class="contenidoconsejos">
+            <ul class="lista-consejos" type: none>
+                <li class="consejos">Utiliza unicamente letras minusculas.</li>
+                <li class="consejos">No coloques acentos.</li>
+                <li class="consejos">No coloques caracteres especiales.</li>
             </ul>
+        </div>
+        <div class="encriptar">
+            <textarea id="ingresa" class="entrada" placeholder="Ingresa aqui tu texto"></textarea>
+        </div>
+        </section>
 
-        <form>
-            <textarea cols="70" rows="10" id="p" class="input- padron" required placeholder="Ingresa tu texto"></textarea>></textarea>
-        </form> 
-    </main>
-</body> 
+        <div class="botones">
+            <button onclick="encripta();" class="boton" id="encriptar" disabled>Encriptar</button>
+            <button onclick="desencripta();" class="boton" id="desencriptar" disabled>Desencriptar</button>
+            <button onclick="copia();" class="boton" id="copiar" disabled>Copiar texto seleccionado</button>
+
+    </div>
+    </section> 
+    
+    <div class="encriptado">
+        
+        
+        <div class="mensaje-encriptado"></div>
+            <textarea id="mensaje-encriptado" class="salida" placeholder="Ningún mensaje fue encontrado"></textarea>
+        
+
+    </section>
+
+</main>
+
+</body>
 </html>
