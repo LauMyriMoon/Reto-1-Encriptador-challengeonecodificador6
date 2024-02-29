@@ -8,10 +8,20 @@ h2 {
 
     text-align: center;
     padding: 20px 0;
+    margin: auto;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+    background-color: #F3F5FC;
+    color: #05428d;
+    font-style: normal;
+    margin: 15px 25px;
 }
 
 .consejos{
     list-style: none;
+    margin: auto;
 }  
 
 .consejos:before{
@@ -38,6 +48,7 @@ h2 {
     font-size: 32px;
     line-height: 150%;
     background-color: #f3f5fc;
+    resize: none;
     
   }
   .entrada:focus,
@@ -99,86 +110,65 @@ h2 {
   outline: none;
 }
 
-.botones {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 1% 0;
-    position: absolute;
-    width: 80%;
-    left: 12%;
-    top: 82%;
-  }
+.botones{
+  display: flex;
+  font-family: 'Montserrat', sans-serif;color: #05428d;
+  font-size: 12px;
+  grid-gap: 50px 70px;
+  width: 175px;
+  height: 50px;
+ margin: 5% 10%;
+  
+}
 
-  .botonencriptar {
-    align-items: center;
-    justify-content: center;
-    padding: 2%;
-    gap: 8px;
-    width: 25%;
-    background-color: lightblue;
-    border-radius: 24px;
-    font-family: 'Montserrat', sans-serif;color: #05428d;
-    font-size: 18px;
-    line-height: 19px;
-    text-align: center;
-    color: #a41b1b;
-  }
-  
-  .btn-desencriptar {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 2%;
-    gap: 8px;
-    width: 25%;
-    background: #d8dfe8;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 19px;
-    text-align: center;
-    color: #0a3871;
-  }
-  
-  .btn-desencriptar:hover,
-  .btn-encriptar:hover {
-    margin: 0.3%;
-    width: 24.5%;
-    padding: 1.8%;
-  }
+#botonencriptar{
+  flex: 1 1 auto;
+  border-radius: 15%;
+}
 
-  #btn-copy{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 2%;
-    gap: 8px;
-    width: 60%;
-    background: white;
-    border: 1px solid #0a3871;
-    border-radius: 24px;
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 19px;
-    text-align: center;
-    color: black;
-    transition: 400ms;
-  }
-  
-  #btn-copy:hover{
-    width: 63%;
-    font-size: 20px;
-    background: #0a3871;
+#botonencriptar:hover,
+#botonencriptar:hover {
+  transform: scale(1.2);
+  background-color:rgb(92, 92, 216);
+  font-family: 'Montserrat', sans-serif;color: aliceblue;
     
-  }
+}
+
+#botondesencriptar{
+  flex: 1 1 auto;
+  border-radius: 15%;
+}
+
+#botondesencriptar:hover,
+#botondesencriptar:hover {
+  transform: scale(1.2);
+  background-color:rgb(92, 92, 216);
+  font-family: 'Montserrat', sans-serif;color: aliceblue;
+    
+}
+
+#botoncopiar{
+  flex: 1  1 rigth;
+  border-radius: 15%;
+}
+
+#botoncopiar:hover,
+#botoncopiar:hover {
+  transform: scale(1.2);
+  background-color:rgb(92, 92, 216);
+  font-family: 'Montserrat', sans-serif;color: aliceblue;
+    
+}
+    
+
+
+  .copy{
+    color: #0a3871;
+    font-size: 13px;
+    margin: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
 
 
 
