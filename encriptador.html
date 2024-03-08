@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"href="encriptador.css">
+   
     <title>Encriptador de texto</title>
 </head>
 
 <body>
-    <main class="main">
-        <section>
-            <h1><img src="imagenes/Logologoalura.png"></h1>
-        
-            <h2>Bienvenido al encriptador de texto</h2>
-            <p>Ingresa el texto que deseas encriptar tomando en cuenta los siguientes consejos: </p>
+    <h1><img src="imagenes/Logologoalura.png"></h1>
+    <h2 class="titulo">Bienvenido al encriptador de texto</h2>
+
+    <p>Ingresa el texto que deseas encriptar tomando en cuenta: </p>
         
 
         <div class="contenidoconsejos">
@@ -22,31 +21,34 @@
                 <li class="consejos">No coloques acentos.</li>
                 <li class="consejos">No coloques caracteres especiales.</li>
             </ul>
+  
+    <main class="main">
+      <section class="form box">
+        <form action="">
+          
+          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+          <div class="botones">
+          <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
+          <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
+          <input class="btn" type="button" value="Copiar texto " id="btn-copy">
         </div>
-        <div class="encriptar">
-            <textarea id="ingresa" class="entrada" placeholder="Ingresa aqui tu texto"></textarea>
-        </div>
-        
-        
-    <div class="botones">
-            <button onclick="encripta();" class="boton" id="botonencriptar" disabled>Encriptar</button>
-            <button onclick="desencripta();" class="boton" id="botondesencriptar" disabled>Desencriptar</button>
-            <button onclick="copia();" class="boton" id="botoncopiar" disabled>Copiar texto seleccionado</button>
+        </form>
+      </section>
     
+      <section class="msg box">
+        <div class="contenedormuneco"></div>
+        <img class=muneco src="imagenes/muneco.png">
+        <input class="text-input-salida" type="text" id="msg"placeholder="Ningún mensaje fue encontrado" readonly>
     </div>
-
+       
+      </section>
+    </main>
     <footer>
         <p class="copy">&copy CopyrightL Lau Moon - 2024</p>
 </footer>
-
-       
-     <div class="encriptado">
-        
-        <div class="mensaje-encriptado"></div>
-            <textarea id="mensaje-encriptado" class="salida" placeholder="Ningún mensaje fue encontrado"></textarea>
-       
+  
+    <script src="encriptador.js"></script>
+    
+  </body>
+  </html>
           
-</main>
-
-</body>
-</html>
