@@ -1,0 +1,54 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet"href="encriptador.css">
+    
+      <title>Encriptador de texto</title>
+  </head>
+
+  <body>
+      <h1><img src="imagenes/Logologoalura.png"></h1>
+      <h2 class="titulo">Bienvenido al encriptador de texto</h2>
+
+      <p>Ingresa el texto que deseas encriptar tomando en cuenta: </p>
+          
+
+          <div class="contenidoconsejos">
+              <ul class="lista-consejos" type: none>
+                  <li class="consejos">Utiliza unicamente letras minusculas.</li>
+                  <li class="consejos">No coloques acentos.</li>
+                  <li class="consejos">No coloques caracteres especiales.</li>
+              </ul>
+    
+      <main class="main">
+        <section class="form box">
+          <form action="">
+            
+          <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" onkeypress="return soloLetras(event)" onblur="limpia()"></textarea>
+            <div class="botones">
+            <input class="btn" type="button" value="Encriptar" id="btn-encriptar">
+            <input class="btn" type="button" value="Desencriptar" id="btn-desencriptar">
+            <input class="btn" type="button" value="Copiar texto de resultado " id="btn-copy">
+          </div>
+          </form>
+        </section>
+      
+        <section class="msg box">
+          
+          
+          <textarea class="text-input-salida" type="text" id="msg"placeholder="Ningún mensaje fue encontrado" readonly></textarea>
+      
+        
+        </section>
+      </main>
+      <footer>
+          <p class="copy">&copy CopyrightL Lau Moon - 2024</p>
+  </footer>
+    
+      <script src="encriptador.js"></script>
+      
+    </body>
+    </html>
+          
